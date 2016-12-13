@@ -182,9 +182,136 @@
 #cssmenu.small-screen #menu-button.menu-opened:before {
   background: #A9A9A9;
 }
+
+
+/* columns */
+
+.onecol,
+.twocol,
+.threecol,
+.fourcol {
+	height:auto;
+	float:left;
+	margin:0 1.234567901235%; /* 10px / 810 */
+	padding:0;
+}
+
+.onecol {
+    width: 940px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.twocol {
+    width: 460px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.threecol {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.fourcol {
+    width: 220px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+p a, blockquote a {
+    color: #68BCA5;
+    background-color: none;
+    text-decoration: none;
+    -webkit-transition: color .2s ease-in; /*safari and chrome */
+    -o-transition: color .2s ease-in; /* opera */
+}
+
+p a:hover, blockquote a:hover {
+    color:#cbd500;
+
+}
+
+p {
+	color: #666;
+	font-family: "rooney-web",serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 15px 0;
+}
+
+blockquote {
+	color: #000;
+	font-family: "rooney-web",serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 31px;
+	margin: 0 0 15px 0;
+	letter-spacing: .04em;
+	font-style: italic;
+	background: #fff;
+	padding: 20px;
+}
+
+.fourcol_3 {
+    width: 700px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+
+.courtney {
+    background-image: url('pics/michelle2.jpg');
+    background-repeat: no-repeat;
+}
+
+.courtney img {
+    height:300px;
+    -webkit-transition: opacity .2s ease-in; /*safari and chrome */
+    -o-transition: opacity .2s ease-in; /* opera */    
+}
+
+.courtney img:hover {
+	height:300px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";    
+}
+
+.brendan {
+    background-image: url('pics/marc2.jpg');
+    background-repeat: no-repeat;
+}
+
+.brendan img {
+    height:300px;
+    -webkit-transition: opacity .2s ease-in; /*safari and chrome */
+    -o-transition: opacity .2s ease-in; /* opera */      
+
+}
+
+.brendan img:hover {
+	height:300px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";    
+}
+
+
+
+
 </style>
 <center>
-<img src="/Users/marcbadrian/Desktop/Night.jpeg" alt="memphis">
+<img src="/Users/marcbadrian/Desktop/wedding_website/Night.jpeg" alt="memphis">
 </center>
 <div id="cssmenu" class="dropdown">
   <div id="menu-button">Menu</div>
@@ -213,3 +340,20 @@
   </ul>
   </div>
 </div>
+<div>
+<div class="fourcol_3">
+			<blockquote>Hi! This is where we write about us. Welcome to the wedding website bitches!!! #BreakingBadrian 09/16/17 - M &amp; M</blockquote>
+		</div>
+</div>
+<div class="twocol courtney">
+			<img src="pics/michelle1.jpg" alt="Michelle">
+			<h1 class="profile">Her</h1>
+			<p>Hi! Michelle Buchwalter here. I live in the lovely city of Memphis. I adore all things radio. Music is my thing. My grandma's sewing machine keeps me busy. Poetry keeps me sane. Children enlighten me daily. Anything vintage inspires me. <a href="http://www.youtube.com/watch?v=PsD0NpFSADM">This movie</a> makes me smile. I am compared to <a href="http://www.youtube.com/watch?v=KL9wZZMCzyQ">this girl</a> quite often.</p> 
+			<p style="font-style:italic;color:#aaa;">I kind of have a thing for Him</p>
+		</div>
+<div class="twocol brendan">
+			<img src="pics/marc1.jpg" alt="Marc">
+			<h1 class="profile">Him</h1>
+			<p>Howdy folks. The name's Marc, but people usually call me Marc. I've been here in Memphis, TN for a thousand years now and I can't ever seem to get enough of this great city. I work as a data analyst during the week, and try to take advantage of time with family and friends on the weekends. I love <a href="http://www.yelp.com/search?find_desc=breakfast+tacos&amp;find_loc=Austin%2C+TX">awesome movies</a>, Netflix, ping pong, and dinosaurs.</p> 
+			<p style="font-style:italic;color:#aaa;">I kind of have a thing for Her</p>			
+		</div>
