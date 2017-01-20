@@ -1,0 +1,131 @@
+<head>
+<style>
+
+
+#photos-title {
+	background: url("http://static.ashleyjeremy.com/photos_title.png") no-repeat scroll center bottom transparent;
+	width: 151px;
+	height: 68px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	
+#photos-wrapper {
+	width: 957px;
+	height: 567px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+#photos-leftarrow {
+	background: url("http://static.ashleyjeremy.com/icon-arrow-left.png") no-repeat scroll center center transparent;
+	width: 24px;
+	height: 567px;
+    cursor: pointer;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+	
+#photos-slideshow {
+	background: url("http://static.ashleyjeremy.com/bg-photo-frame.png") no-repeat scroll center bottom transparent;
+	width: 909px;
+	height: 567px;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#photos-thephoto {
+	position: relative;
+	width: 853px;
+	height: 505px;
+}
+
+#photos-thephoto img {
+	position: absolute;
+	top: 28px;
+	left: 30px;
+}
+
+#photos-rightarrow {
+	background: url("http://static.ashleyjeremy.com/icon-arrow-right.png") no-repeat scroll center center transparent;
+	width: 24px;
+	height: 567px;
+    cursor: pointer;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+	
+#photos-text {
+	width: 687px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 13px;
+	}
+
+</style>
+
+<script>
+			$(function(){
+				$('.fadein img:gt(0)').hide();
+				$('#photos-leftarrow').click(function(){
+					$('.fadein :first-child').fadeOut();
+					$('.fadein :last-child').fadeIn();
+					$('.fadein :last-child').prependTo('.fadein');
+					});
+				$('#photos-rightarrow').click(function(){$('.fadein :first-child').fadeOut()
+					.next('img').fadeIn()
+					.end().appendTo('.fadein');
+					});
+			}); 
+		</script>
+</head>
+
+ <script>(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+  			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=2217889524";
+  			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+<div id="photos-title">
+    		</div>
+<div id="photos-wrapper">
+    			<div id="photos-leftarrow">
+	    		</div>
+	    		<div id="photos-slideshow">
+		    		<div id="photos-thephoto" class="fadein">
+	    				<img src="http://static.ashleyjeremy.com/photo1.jpg" alt="photo1" width="853" height="505">
+	    				<img src="http://static.ashleyjeremy.com/photo2.jpg" alt="photo2" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo3.jpg" alt="photo3" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo4.jpg" alt="photo4" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo5.jpg" alt="photo5" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo6.jpg" alt="photo6" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo7.jpg" alt="photo7" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo8.jpg" alt="photo8" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo9.jpg" alt="photo9" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo10.jpg" alt="photo10" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo11.jpg" alt="photo11" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo12.jpg" alt="photo12" width="853" height="505" style="display: none;">
+	    				<img src="http://static.ashleyjeremy.com/photo13.jpg" alt="photo13" width="853" height="505" style="display: none;">
+	    			</div>
+	    		</div>	
+    			<div id="photos-rightarrow">
+    			</div>
+    		</div>
+<div id="photos-text">
+    			<p>Photos by <a href="http://www.samhurdphotography.com/" target="_blank">Sam Hurd Photography</a><br>
+    			You can also find some snapshots of our day-to-day life on <a href="http://instagram.com/ashleygilmore" target="_blank">Ashley's Instagram</a> and <a href="http://instagram.com/rephlo" target="_blank">Jeremy's Instagram</a></p>
+    		</div>
+

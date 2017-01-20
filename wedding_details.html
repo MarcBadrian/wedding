@@ -9,6 +9,7 @@
   padding: 0;
   border: 0;
   list-style: none;
+  text-indent: 12px;
   line-height: 1;
   display: block;
   position: relative;
@@ -29,7 +30,8 @@
   display: none;
 }
 #cssmenu {
-  width: auto;
+  width: 100%;
+  position: absolute;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   line-height: 1;
@@ -75,7 +77,7 @@
   transform-style: preserve-3d;
 }
 #cssmenu > ul > li.active > a {
-  color: #F8DF09;
+  color: #d4af37;
 }
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover {
@@ -96,7 +98,7 @@
   width: 100%;
   height: 100%;
   padding: 16px 20px;
-  color: #F8DF09;
+  color: #d4af37;
   background: #696969;
   content: attr(data-title);
   -webkit-transition: background 0.3s;
@@ -315,6 +317,8 @@ blockquote {
 
 body {
   background-color:#f6f6f6;
+  width: 100%;
+  margin: 0;
 }
 
 .container {
@@ -331,21 +335,81 @@ body {
   clear:both;
 }
 
+/* vendor prefixes removed for clarity */
+.ribbon {
+    width: 650px;
+    margin: 10px auto;
+    padding: 0 10px 0;
+    position: relative;
+    color: #444;
+    background: #E7D551;
+    background-color: #000;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+.ribbon h3 {
+    display: block;
+    height: 30px;
+    line-height: 1.3;
+    width: 680px;
+    margin: 0;
+    padding: 5px 10px;
+    position: relative;
+    left: -26px;
+    top: 8px;
+    color: #000;
+    text-shadow: 0 1px 1px #111;
+    border-top: 1px solid #363636;
+    border-bottom: 1px solid #202020;
+    background: #333;
+    background-color: #000;
+    background: linear-gradient(top, #383838 0%, #262626 100%);
+    border-radius: 2px 2px 0 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    background: -webkit-linear-gradient(transparent, transparent), url(http://www.publicdomainpictures.net/pictures/80000/velka/metallic-gold-glitter-texture.jpg) repeat;
+}
+.ribbon h3::before,
+.ribbon h3::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -11px;
+    z-index: -1;
+    border: 5px solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: -5px -10px -5 -10;
+    
+}
+
+.ribbon h3::before {left: 5;}
+.ribbon h3::after {right: 5;}
+
+/* resize images */
+.container img {
+    width: 805;
+    height: auto;
+}
 
 </style>
+
 <center>
-<img src="/Users/marcbadrian/Desktop/wedding_website/cadre.jpg" alt="proposal">
+  <div class="container">
+<img src="/Users/marcbadrian/Desktop/wedding_website/sample_header.jpeg" alt="marc_michelle" width="100%">
+</div>
 </center>
 <div id="cssmenu" class="dropdown">
   <div id="menu-button">Menu</div>
   <ul>
-    <li class="active">
+    <li>
       <a href="homepage.html" data-title="The Couple">The Couple</a>
     </li>
     <li>
       <a href="proposal.html" data-title="The Proposal">The Proposal</a>
     </li>
-    <li>
+    <li class="active">
       <a href="#" data-title="Wedding Details">Wedding Details</a>
     </li>
     <li>
@@ -364,18 +428,91 @@ body {
   </div>
 </div>
 <div class="container">
-    <div class="bump"></div>
-<div>
-<div class="fourcol_3">
-			<blockquote>Hi! This is where we write about all of our amazing wedding details! #BreakingBadrian 09/16/17 - M &amp; M</blockquote>
-		</div>
-</div>
-    <div class="bump">&nbsp;</div>
-    <div style="clear:both;">&nbsp;</div>
-<div style="clear:both;">&nbsp;</div>
 
     <div class="onecol"><div class="rule">&nbsp;</div></div>
 
     <div class="bump"></div>
-
           </div></div>
+<div class="ribbon" style="background-color: #FFF;">
+    <center><h3>CEREMONY / RECEPTION</h3></center>
+    <br>
+    <br>
+    <h2 style="color:#c3a343; -webkit-text-fill-color: transparent; background: -webkit-linear-gradient(transparent, transparent), url(http://www.publicdomainpictures.net/pictures/80000/velka/metallic-gold-glitter-texture.jpg) repeat; background: -o-linear-gradient(transparent, transparent); -webkit-background-clip: text;">YOUR TEXT HERE</h2>
+    <center><div>
+<a href="http://www.cadrebuilding.com" target="_blank"><img src="cadre1.jpg" alt="cadre_memphis"></a>    
+</div></center>
+    <center><h2>The Cadre Building</h2></center>
+    <center><h4>Saturday, September 16th 2017 - 7:30 PM</h4></center>
+    <center><h4>Attire: Black Tie Optional</h4></center>
+    <center><p>Located in the heart of downtown Memphis, the Cadre Building is a 36,000-square foot historic landmark. It was built in 1928 and was formally a Leader Federal Bank for Savings. Now, the space has been transformed into a grand ballroom. After seeing the Cadre, we instantly knew that we wanted to get married there. From the gorgeous crystal chandeliers and the detail-oriented columns that were hand-painted with gold leaf molding, we fell in love with the overall elegance of the building!</p></center>
+</div>
+
+
+<div class="ribbon" style="background-color: #FFF;">
+    <center><h3>GETTING THERE</h3></center>
+    <br>
+    <br>
+    <center><iframe src="https://www.google.com/maps/d/embed?mid=1dpNj4--4FiS1ZbjYWQaj7jN7LoM" width="600" height="440"></iframe></center>
+    <center><h2>Directions</h2></center>
+    <h4>From the Memphis International Airport (MEM)</h4>
+    <p>Via I-240: </p>
+    <p>Follow the signs out of the airport to merge onto I-240 N. Take exit 30 for Union Avenue. Keep left to merge onto Union Ave Westbound. Turn right onto S Third St and then take the second left onto Monroe Avenue. The Cadre Building will be on your left at the corner of Monroe and Second Street.</p>
+    <p>If you aren't renting a car, Uber picks up at the airport!</p>
+    <h4>From East Memphis</h4>
+    <p>Via Poplar Avenue: <p>
+    <p>Take Poplar Avenue all the way down to North Second Street and turn left onto North Second Street. The Cadre Building will be on your left, at the corner of Second Street and Monroe Avenue.</p>
+    <p>Via I-240: </p>
+    <p>Merge onto I-240 W and drive until you see the sign for the I-240 N ramp. Merge onto I-240 N. Continue on I-240 N and take EXIT 30, the Union Avenue exit. Keep left to take the Union Ave W. ramp. Turn right onto S Third St and then take the second left onto Monroe Avenue. The Cadre Building will be on your left on the corner of Monroe and Second Street.</p>
+    <p>Via I-40: </p>
+    <p>Merge onto I-40 W toward Memphis. Keep left to take I-40 W toward Little Rock. Take the Second Street exit, EXIT 1A, toward Third Street. Merge onto Second Street and then the Cadre Building will appear on your left, on the corner of Monroe and Second Street.</p>
+  <p>*See above under ceremony and reception section regarding parking.*<p>
+  <br>
+</div>
+
+<div class="ribbon" style="background-color: #FFF;">
+    <center><h3>HOTEL ACCOMMODATIONS</h3></center>
+    <br>
+    <br>
+    <p>For our out of town guests, we have a couple of hotel options. We will not be providing a shuttle service to and from the wedding because all of the hotels are within a short walking distance to the venue. Walking directions will be waiting for you at check-in. All of the hotel block rates start on Friday, September 15th with a Sunday, September 17th checkout. Choose what works best for you!</p>
+    <br>
+    <br>
+    <center><a href="http://www.madisonhotelmemphis.com" target="_blank"><img src="madison.jpg" alt="madison_hotel__downtown_memphis" width="535"></a></center>
+    <div style="float: left;">
+    <center><h2>The Madison Hotel</h2></center>
+    <center><h4>Address: 79 Madison Avenue, Memphis, TN 38103</h4></center>
+    <center><h4>Room Block Rate: $159 a night plus tax</h4></center>
+    <p>We love The Madison Hotel and this would be our recommendation on where to stay. It's a boutique luxury hotel that's within walking distance to many attractions. The hotel is just steps away from the Main Street Trolley, which will give you full access to the places you'll want to see, like Beale Street and the Mississippi Riverfront. The hotel's contemporary style is super cool and it brings the musical spirit of Memphis to life. This is where we're staying along with the bridal party!</p>
+    <p>Call the hotel directly at 1-901-333-1200 to make your reservation. Reference the Buchwalter/Badrian wedding block to ensure that you get the contracted rate. We only did a limited amount of rooms here for the weekend because there's an attrition clause. So if you call and more rooms need to be added we can absolutely do that for you. Just let us know! The rate is available until August 25th, 2017. If you rent a car, the overnight parking rate is $29 plus tax a night, but self-parking is available for much cheaper at other parking garages around the hotel. This hotel is the farthest walk to the venue, but it's only a 6-minute walk.</p>
+  </div>
+
+    <br>
+    <br>
+    <hr>
+    <div>
+      <br>
+      <br>
+    <center><a href="http://www.hisdowntownmemphis.com" target="_blank"><img src="h_inn.jpg" alt="holiday_inn__downtown_memphis" width="535"></a></center>
+    <div style="float: left;">
+    <center><h2>The Holiday Inn Downtown</h2></center>
+    <center><h4>Address: 160 Union Avenue, Memphis, TN 38103</h4></center>
+    <center><h4>Room Block Rate: $134 a night plus tax</h4></center>
+    <p>The Holiday Inn Downtown is also in a very convenient location. It's directly across the street from the historic Peabody Hotel where you can see the duck march and just two blocks away from Beale Street. They also have a shuttle service that will take you anywhere within a 5 mile radius when available. The hotel is holding a rate quote for us instead of a block of rooms. If the hotel sells out of rooms for that weekend, the special rate price will no longer be available. So if you go with this hotel, book early and don't wait until August 8th when the rate quote ends. Parking at the hotel is valet only for $22.00 plus tax a day. But again, you can park in a garage or lot close by for much cheaper. This hotel is the closest to the venue and is only a 2-minute walk.</p>
+    <p>Call the hotel at 901-525-5491 to make a reservation. Say that you are calling for the Buchwalter-Badrian wedding.</p>
+    <br>
+    <br>
+  </div>
+</div>
+    <br>
+    <hr>
+    <div>
+      <br>
+      <br>
+    <center><a href="http://doubletree3.hilton.com/en/hotels/tennessee/doubletree-by-hilton-hotel-memphis-downtown-MEMDNDT/index.html" target="_blank"><img src="doubletree.jpg" alt="doubletree_downtown_memphis" width="535"></a></center>
+    <center><h2>The DoubleTree by Hilton Hotel Memphis Downtown</h2></center>
+    <center><h4>Address: 185 Union Avenue, Memphis, TN 38103</h4></center>
+    <center><h4>Room Block Rate: $159 a night plus tax</h4></center>
+    <p>The DoubleTree is also walking distance to many places you'll want to see like the Peabody ducks and the National Civil Rights Museum. It's 3 blocks away from Beale Street and across the street from AutoZone Park. </p>
+    <p>You can make your reservation by calling 1-800-222-8733 or 901-528-1800 and say the Buchwalter-Badrian wedding block. The cut-off date to make your reservation is August 18th, 2017. Guest valet parking is available for $25.00 plus tax a day or you can park at a parking garage close by. This hotel is a 3-minute walk to the venue.</p>
+    <br>
+
+</div>
