@@ -57,7 +57,7 @@
   float: right;
 }
 #cssmenu > ul > li > a {
-  padding: 16px 20px;
+  padding: 16px 18px;
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
@@ -97,7 +97,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 16px 20px;
+  padding: 16px 18px;
   color: #d4af37;
   background: #696969;
   content: attr(data-title);
@@ -335,6 +335,13 @@ body {
   clear:both;
 }
 
+.testing {
+  color:#c3a343; 
+  -webkit-text-fill-color: transparent; 
+  background: -webkit-linear-gradient(transparent, transparent), url(http://www.publicdomainpictures.net/pictures/80000/velka/metallic-gold-glitter-texture.jpg) repeat; 
+  background: -o-linear-gradient(transparent, transparent); -webkit-background-clip: text;
+  }
+
 /* vendor prefixes removed for clarity */
 .ribbon {
     width: 650px;
@@ -347,6 +354,8 @@ body {
     border: 1px solid #d2d2d2;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    -webkit-text-fill-color: #000; 
+  background: -o-linear-gradient(transparent, transparent); -webkit-background-clip: text;
 }
 .ribbon h3 {
     display: block;
@@ -358,7 +367,7 @@ body {
     position: relative;
     left: -26px;
     top: 8px;
-    color: #000;
+    color: #fff;
     text-shadow: 0 1px 1px #111;
     border-top: 1px solid #363636;
     border-bottom: 1px solid #202020;
@@ -367,7 +376,6 @@ body {
     background: linear-gradient(top, #383838 0%, #262626 100%);
     border-radius: 2px 2px 0 0;
     box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-    background: -webkit-linear-gradient(transparent, transparent), url(http://www.publicdomainpictures.net/pictures/80000/velka/metallic-gold-glitter-texture.jpg) repeat;
 }
 .ribbon h3::before,
 .ribbon h3::after {
@@ -397,7 +405,7 @@ body {
 
 <center>
   <div class="container">
-<img src="sample_header.jpeg" alt="marc_michelle" width="100%">
+<img src="details_header.jpg" alt="marc_michelle" height="500">
 </div>
 </center>
 <div id="cssmenu" class="dropdown">
@@ -433,11 +441,10 @@ body {
 
     <div class="bump"></div>
           </div></div>
-<div class="ribbon" style="background-color: #FFF;">
-    <center><h3>CEREMONY / RECEPTION</h3></center>
+<div class="ribbon">
+    <center><h3 style="-webkit-text-fill-color: #fff;">CEREMONY / RECEPTION</h3></center>
     <br>
     <br>
-    <h2 style="color:#c3a343; -webkit-text-fill-color: transparent; background: -webkit-linear-gradient(transparent, transparent), url(http://www.publicdomainpictures.net/pictures/80000/velka/metallic-gold-glitter-texture.jpg) repeat; background: -o-linear-gradient(transparent, transparent); -webkit-background-clip: text;">YOUR TEXT HERE</h2>
     <center><div>
 <a href="http://www.cadrebuilding.com" target="_blank"><img src="cadre1.jpg" alt="cadre_memphis"></a>    
 </div></center>
@@ -449,7 +456,7 @@ body {
 
 
 <div class="ribbon" style="background-color: #FFF;">
-    <center><h3>GETTING THERE</h3></center>
+    <center><h3 style="-webkit-text-fill-color: #fff;">GETTING THERE</h3></center>
     <br>
     <br>
     <center><iframe src="https://www.google.com/maps/d/embed?mid=1dpNj4--4FiS1ZbjYWQaj7jN7LoM" width="600" height="440"></iframe></center>
@@ -470,7 +477,7 @@ body {
 </div>
 
 <div class="ribbon" style="background-color: #FFF;">
-    <center><h3>HOTEL ACCOMMODATIONS</h3></center>
+    <center><h3 style="-webkit-text-fill-color: #fff;">HOTEL ACCOMMODATIONS</h3></center>
     <br>
     <br>
     <p>For our out of town guests, we have a couple of hotel options. We will not be providing a shuttle service to and from the wedding because all of the hotels are within a short walking distance to the venue. Walking directions will be waiting for you at check-in. All of the hotel block rates start on Friday, September 15th with a Sunday, September 17th checkout. Choose what works best for you!</p>
