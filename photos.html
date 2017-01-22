@@ -119,6 +119,7 @@ p {
   border: 0;
   list-style: none;
   text-indent: 12px;
+  text-align: center;
   line-height: 1;
   display: block;
   position: relative;
@@ -345,30 +346,24 @@ p {
 }
 
 blockquote {
-	color: #000;
-	font-family: "rooney-web",serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 21px;
-	line-height: 31px;
-	margin: 0 0 0 0;
-	letter-spacing: .04em;
-	font-style: italic;
-	background: #fff;
-	padding: 20px;
-}
-
-.center {
-    margin: auto;
-    width: 70%;
-    padding: 10px;
+  color: #000;
+  font-family: "rooney-web",serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 31px;
+  margin: 0 0 15px 0;
+  letter-spacing: .04em;
+  font-style: italic;
+  background: #fff;
+  padding: 20px;
 }
 
 .fourcol_3 {
     width: 700px;
     height: auto;
-    float: left;
-    margin: 0 10px;
+    float: center;
+    margin: 0 auto;
 }
 
 .onecol {
@@ -379,12 +374,12 @@ blockquote {
 }
 
 body {
-  background-color:#f6f6f6;
+  background-color:#fbdadf;
   width: 100%;
   margin: 0;
 }
 
-.container {
+.page_container {
     width:960px;
     height:auto;
     margin:0px auto;
@@ -398,10 +393,17 @@ body {
   clear:both;
 }
 
+/* resize images */
+.container img {
+    width: 805;
+    height: 500;
+}
 
 </style>
 <center>
-<img src="photos_header.jpg" alt="mm" height="500">
+<div class="container">
+<img src="photos_header.jpg" alt="mm" height="500" style="display: block;">
+</div>
 </center>
 <div id="cssmenu" class="dropdown" style="font-family: Raleway, sans-serif;">
   <div id="menu-button">Menu</div>
@@ -430,7 +432,7 @@ body {
   </ul>
   </div>
 </div>
-<div class="container">
+<div class="page_container">
     <div style="clear:both;">&nbsp;</div>
 <div style="clear:both;">&nbsp;</div>
           </div></div>
@@ -472,6 +474,8 @@ body {
           </div>
         </div>
         <div class="center">
+        </div>
+    <div class="fourcol_3">
         <blockquote>Want to see us in our natural habitat? Follow Michelle on <a href="https://twitter.com/michelle_radio?lang=en" target="_blank">Twitter</a> and <a href="https://www.instagram.com/michelle_radio/" target="_blank">Instagram</a>! Marc doesn’t post a lot… she’s the reason everything is documented ;)</blockquote>
       </div>
 </html>

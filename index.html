@@ -1,3 +1,5 @@
+<script src="/bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
+
 <style>
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 #cssmenu,
@@ -10,6 +12,7 @@
   border: 0;
   list-style: none;
   text-indent: 12px;
+  text-align: center;
   line-height: 1;
   display: block;
   position: relative;
@@ -30,13 +33,21 @@
   display: none;
 }
 #cssmenu {
-  width: auto;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   line-height: 1;
+  margin-right: auto;    
+    margin-left: auto;    
+    width: 100%;    
+    max-width: 100%;    
+    min-width: 1000px; 
 }
 #cssmenu > ul {
   background: #000000;
+  margin-right: auto;    
+    margin-left: auto;    
+    max-width: 100%;    
+    min-width: 1000px; 
 }
 #cssmenu > ul > li {
   float: left;
@@ -219,7 +230,8 @@
 }
 
 .fourcol {
-    width: 220px;
+    width: 120px;
+    height: 165px;
     height: auto;
     float: left;
     margin: 0 10px;
@@ -249,24 +261,24 @@ p {
 }
 
 blockquote {
-	color: #000;
-	font-family: "rooney-web",serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 21px;
-	line-height: 31px;
-	margin: 0 0 15px 0;
-	letter-spacing: .04em;
-	font-style: italic;
-	background: #fff;
-	padding: 20px;
+  color: #000;
+  font-family: "rooney-web",serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 31px;
+  margin: 0 0 15px 0;
+  letter-spacing: .04em;
+  font-style: italic;
+  background: #fff;
+  padding: 20px;
 }
 
 .fourcol_3 {
     width: 700px;
     height: auto;
-    float: left;
-    margin: 0 10px;
+    float: center;
+    margin: 0 auto;
 }
 
 
@@ -323,7 +335,7 @@ body {
 }
 
 .container {
-    width:960px;
+    width:1000px;
     height:auto;
     margin:0px auto;
     padding:0px;
@@ -336,6 +348,73 @@ body {
   clear:both;
 }
 
+body {
+    background-color: #fbdadf;
+}
+
+.count {
+  background:#d4af37;
+  padding:12px 0 0 0;
+  width:100%;
+  height:151px;
+  -webkit-transition: background-color .25s ease-in; /*safari and chrome */
+  -o-transition: background-color .25s ease-in; /* opera */
+}
+
+.count:hover {
+  background: #000000;
+  cursor:pointer;
+}
+
+.count h1, .count h3, .count p, .fourcol-prop h1, .fourcol-prop h3, .fourcol-prop p {
+  text-align: center;
+    text-shadow: 0px 1px 0px #999;
+
+  color: #fff;
+}
+
+.count h1, fourcol-prop h1 {
+  font-size: 46px;
+  padding-top: 5px;
+}
+
+.count h1 {
+  margin-top: 0;
+}
+
+.count h3 {
+  font-size: 20px;
+  margin-top: -30px;
+}
+
+.count p {
+  font-size: 25px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #fff;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 12px;
+    -webkit-border-horizontal-spacing: 12px;
+    -webkit-border-vertical-spacing: 2px;
+}
+
+.section-title {
+    border-bottom: 2px double #000;
+    display: inline-block;
+    font-family: 'ostrich_sansbold', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 4em;
+    text-align: center;
+    width: 100%;
+    color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(http://www.chainimage.com/images/gold-glitter-textures-the-art-mad-wallpapers.png) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
 
 </style>
 <center>
@@ -368,25 +447,50 @@ body {
   </ul>
   </div>
 </div>
-<div class="container">
+<div class="container" style="background: white;">
     <div class="bump"></div>
-<div>
-<div class="fourcol_3">
-			<blockquote>Hi! This is where we write about us. Welcome to the wedding website bitches!!! #BreakingBadrian 09/16/17 - M &amp; M</blockquote>
+<table>
+        <tr>
+           <td width="100">
+<div class="fourcol_3" float="left">
+			<blockquote>Hey there! Welcome to our wedding website! Everything you need to know about the big day and our love story you can find here. We can't wait to celebrate with everyone! Until then, have fun exploring our website! - Marc &amp; Michelle</blockquote>
 		</div>
-</div>
+</td>
+           <td width="600">
+<div class="count">
+        <p>#BreakingBadrian</p>
+        <script language="JavaScript">
+          TargetDate = "09/16/2017 7:30 PM";
+          BackColor = "#f6f6f6";
+          ForeColor = "#424242";
+          CountActive = true;
+          CountStepper = -1;
+          LeadingZero = true;
+          DisplayFormat = "<h1>%%D%% Days</h1><h3>%%H%% Hrs &amp; %%M%% Mins %%S%% Seconds</h3>";
+          FinishMessage = "";
+        </script>
+        <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js"></script>
+      </div>
+          </td>
+        </tr>
+   </table>
     <div class="bump">&nbsp;</div>
     <div style="clear:both;">&nbsp;</div>
+
 <div class="twocol michelle">
 			<center><img src="michelle1.jpg" alt="Michelle"></center>
-			<h1 class="profile">Her</h1>
-<p>Hey there, it's Michelle! I've been in Memphis, TN for a bit over four years now but I was born and raised in Rockaway Beach, NY and left when I graduated college. I will be a New Yorker until the day I die! I love animals (especially puppies and kittens), grande skinny soy vanilla lattes, Beyoncé, a solid New York style sub/sandwich, all things Disney, and juicy entertainment news. I live and breathe radio and couldn't survive without music. Bad reality TV is my guilty pleasure and naps keep me sane.</p>
+<div style="background: white; padding: 10px">
+			<center><h1 class="profile">About Michelle</h1></center>
+<p>What's up? It's Michelle! I've been in Memphis, TN for a bit over four years now but I was born and raised in Rockaway Beach, NY and left when I graduated college. I will be a New Yorker until the day I die! I love animals (especially puppies and kittens), grande skinny soy vanilla lattes, Beyonc&eacute;, a solid New York style sub/sandwich, all things Disney, and juicy entertainment news. I live and breathe radio and couldn't survive without music. Bad reality TV is my guilty pleasure and naps keep me sane.</p>
 		</div>
+</div>
 <div class="twocol marc">
 			<center><img src="marc1.jpg" alt="Marc"></center>
-			<h1 class="profile">Him</h1>
-			<p>Howdy folks. The name's Marc, but people usually call me Marc. I've been here in Memphis, TN for a thousand years now and I can't ever seem to get enough of this great city. I work as a data analyst during the week, and try to take advantage of time with family and friends on the weekends. I love <a href="http://www.yelp.com/search?find_desc=breakfast+tacos&amp;find_loc=Austin%2C+TX">awesome movies</a>, Netflix, ping pong, and dinosaurs.</p> 
-		</div>
+<div style="background: white; padding: 5px">
+			<center><h1 class="profile">About Marc</h1></center>
+    <p>Hola! Marc here, Memphis native and avid pedestrian. After doing a stint near the Miami Federal Correction Facility back in the late aughts, I was ultimately released with a degree in Motion Pictures and Psychology and made my way back to the Bluff City. A few years of aimless drifting led me back to school to "learn the computers" and luckily meet the love of my life (she's the young attractive lady in the picture over there &larr;). Data Analyst by day and Netflix connoisseur by night, I one day hope to win ten grand off of a scratch-off lottery ticket, gain awesome super powers (by accident), and receive an Academy Award for Best Original Screenplay. </p>
+  </div>
+</div>
 <div style="clear:both;">&nbsp;</div>
 
     <div class="onecol"><div class="rule">&nbsp;</div></div>
@@ -394,9 +498,10 @@ body {
     <div class="bump"></div>
 
           </div></div>
-<div style="margin: 0 auto;">
-<div class="onecol" style="margin-left: 105px">
-<h1 class="profile">Our Story</h1>
-<p>Michelle was born and raised in Rockaway Beach, NY and Marc was born and raised in Memphis, TN. She went to Syracuse University for college and he went to the University of Miami. The odds that they would ever meet were slim. Thankfully, Michelle's career in radio found her taking a gig in Memphis. Since she was moving to a brand new city and didn't know anyone, her friend and now bridesmaid suggested she try online dating. Michelle signed up for OkCupid, where she and Marc had a 94% match rate. After a few message exchanges back and forth, the two of them met up at Republic Coffee, a local coffee shop. Two skinny honey vanilla cream lattes and FIVE HOURS LATER, the rest is history. They both knew after that first encounter that this was the start of something very special.</p>
+<div class="container" style="background: white; margin: 0 auto; padding-top: 10px; padding-bottom: 10px;">
+<center><h1>Our Story</h1></center>
+<p style="padding-left: 20px; padding-right: 20px; padding-bottom: 20px;">Michelle was born and raised in Rockaway Beach, NY and Marc was born and raised in Memphis, TN. She went to Syracuse University for college and he went to the University of Miami. The odds that they would ever meet were slim. Thankfully, Michelle's career in radio found her taking a gig in Memphis. Since she was moving to a brand new city and didn't know anyone, her friend and now bridesmaid suggested she try online dating. Michelle signed up for OkCupid, where she and Marc had a 94% match rate. After a few message exchanges back and forth, the two of them met up at Republic Coffee, a local coffee shop. Two skinny honey vanilla cream lattes and FIVE HOURS LATER, the rest is history. They both knew after that first encounter that this was the start of something very special.</p>
 </div>
 </div>
+
+

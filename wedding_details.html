@@ -10,6 +10,7 @@
   border: 0;
   list-style: none;
   text-indent: 12px;
+  text-align: center;
   line-height: 1;
   display: block;
   position: relative;
@@ -266,46 +267,8 @@ blockquote {
 .fourcol_3 {
     width: 700px;
     height: auto;
-    float: left;
+    float: center;
     margin: 0 10px;
-}
-
-
-.michelle {
-    background-image: url('pics/michelle2.jpg');
-    background-repeat: no-repeat;
-}
-
-.michelle img {
-    height:300px;
-    -webkit-transition: opacity .2s ease-in; /*safari and chrome */
-    -o-transition: opacity .2s ease-in; /* opera */    
-}
-
-.michelle img:hover {
-	height:300px;
-	opacity: 0;
-	filter: alpha(opacity=0);
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";    
-}
-
-.marc {
-    background-image: url('pics/marc2.jpg');
-    background-repeat: no-repeat;
-}
-
-.marc img {
-    height:300px;
-    -webkit-transition: opacity .2s ease-in; /*safari and chrome */
-    -o-transition: opacity .2s ease-in; /* opera */      
-
-}
-
-.marc img:hover {
-	height:300px;
-	opacity: 0;
-	filter: alpha(opacity=0);
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";    
 }
 
 .onecol {
@@ -316,12 +279,12 @@ blockquote {
 }
 
 body {
-  background-color:#f6f6f6;
+  background-color:#fbdadf;
   width: 100%;
   margin: 0;
 }
 
-.container {
+.page_container {
     width:960px;
     height:auto;
     margin:0px auto;
@@ -350,12 +313,11 @@ body {
     position: relative;
     color: #444;
     background: #E7D551;
-    background-color: #000;
+    background-color: #fff;
     border: 1px solid #d2d2d2;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.1);
     -webkit-text-fill-color: #000; 
-  background: -o-linear-gradient(transparent, transparent); -webkit-background-clip: text;
 }
 .ribbon h3 {
     display: block;
@@ -397,15 +359,15 @@ body {
 
 /* resize images */
 .container img {
-    width: 805;
-    height: auto;
+    width: auto;
+    height: 500;
 }
 
 </style>
 
 <center>
   <div class="container">
-<img src="details_header.jpg" alt="marc_michelle" height="500">
+<img src="details_header.jpg" alt="marc_michelle">
 </div>
 </center>
 <div id="cssmenu" class="dropdown">
@@ -435,7 +397,7 @@ body {
   </ul>
   </div>
 </div>
-<div class="container">
+<div class="page_container">
 
     <div class="onecol"><div class="rule">&nbsp;</div></div>
 
