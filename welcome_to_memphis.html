@@ -297,8 +297,103 @@ body {
   clear:both;
 }
 
-
 </style>
+
+<style type="text/css">
+/*  CSS Image Map   */
+
+    #map {
+      margin:0;
+      padding:0;
+      width:797px;
+      height:524px;
+      background:url(downtown_memphis.jpg) top left no-repeat #fff;
+      font-family:arial, helvetica, sans-serif;
+      font-size:8pt;
+    }
+    
+    #map li {
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+    
+    #map li a {
+      position:absolute;
+      display:block;
+      /*
+         Specifying a background image
+         (a 1px by 1px transparent gif)
+         fixes a bug in older versions of
+         IE that causeses the block to not
+         render at its full dimensions.
+      */
+        background:url(blank.gif);
+        text-decoration:none;
+      color:#000;
+    }
+    
+    #map li a span { display:none; }
+    
+    #map li a:hover span {
+      position:relative;
+      display:block;
+      width:200px;
+      left:20px;
+      top:20px;
+      background-color: black;
+      color: #fff;
+      padding: 5px;
+      border-radius: 6px;
+ 
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+      }
+
+  
+    #map a.gus {
+      top:1030px;
+      left:500px;
+      width:80px;
+      height:90px;
+    }
+    
+    #map a.rendezvous {
+      top:865px;
+      left:630px;
+      width:50px;
+      height:50px;
+    }
+    
+    #map a.hueys {
+      top:925px;
+      left:630px;
+      width:50px;
+      height:50px;
+    }
+    
+    #map a.beale {
+      top:1000px;
+      left:625px;
+      width:115px;
+      height:95px;
+    }
+    
+    #map a.river {
+      top:1065px;
+      left:360px;
+      width:70px;
+      height:120px;
+    }
+
+    #map a.peabody {
+      top:930px;
+      left:690px;
+      width:70px;
+      height:120px;
+    }
+  </style>
 <center>
 <img src="welcome_header.jpg" alt="memphis" height="500">
 </center>
@@ -331,18 +426,31 @@ body {
 </div>
 <div class="container">
     <div class="bump"></div>
-<div>
-<div class="fourcol_3">
-			<blockquote>Hi! This is where we tell you about all the cool things you can do in Memphis while you're here! #BreakingBadrian 09/16/17 - M &amp; M</blockquote>
-		</div>
-</div>
-    <div class="bump">&nbsp;</div>
-    <div style="clear:both;">&nbsp;</div>
-<div style="clear:both;">&nbsp;</div>
 <center><h2>The Badrians' Official Visitor's Guide To Memphis, TN!</h2></center> 
 <center><h3>(These are the things you MUST check out or try while you're in town!)</h3></center>
     <div class="onecol"><div class="rule">&nbsp;</div></div>
+<div style="margin-left: 80px;">
+<ul id="map">
+  <li><a class="gus" href="#"><span><b>Gus' Fried Chicken</b><br>
+    They are world famous for a reason. Gus's focuses on one thing and hits out of the park… chicken! Get yourself some amazing hot and spicy fried chicken with a side of baked beans, slaw, macaroni and cheese… whatever floats your boat!</span></a></li>
 
+  <li><a class="rendezvous" href="#"><span><b>Rendezvous</b><br>
+    The Rendezvous has been a Memphis BBQ tradition since 1948. Marc's recommendation would be the ribs, wet or dry. Michelle's pick would be the pork shoulder plate. Don't forget the traditional cheese and sausage plate to start off with!</span></a></li>
+    
+  <li><a class="hueys" href="#"><span><b>Huey's</b><br>
+    They are known for their world famous burgers and we agree, their burgers are top-notch. </span></a></li>
+    
+  <li><a class="beale" href="#"><span><b>Beale Street</b><br>
+    You can't come to Memphis and NOT check out Beale Street! Walk it in its entirety and take in the true sounds of Memphis spilling out of the stores, restaurants and clubs! We recommend watching the Beale Street Flippers doing their aerial somersaults, checking out A. Schwab Dry Goods Store and their old school soda fountain and hitting up Silky O'Sullivan's Pub for a Diver, a secret cocktail served in a big bucket with multiple straws. You MUST share it with someone!
+    </span></a></li>
+    
+  <li><a class="river" href="#"><span><b>Memphis Riverfront/Tom Lee Park</b><br>
+    Head down to the river and go for a walk that has a beautiful view of the Mississippi River and bridge! There's even an interactive fitness course in the park and it's a great place to get a workout in!</span></a></li>
+
+  <li><a class="peabody" href="#"><span><b>The Peabody Hotel</b><br>
+    An iconic landmark in Memphis, the Peabody Hotel is worth checking out just for it's gorgeous lobby alone. It makes for great people watching! But, you have to check out the Peabody Ducks! There are two Peabody Duck Marches a day at 11 A.M. and 4 P.M. that you can catch! Get there early to grab a spot. It's completely free, and you can also check out where the ducks live on the Peabody Rooftop!
+    </span></a></li>
+</ul>
     <div class="bump"></div>
 
           </div></div>
