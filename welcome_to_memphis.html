@@ -393,6 +393,59 @@ body {
       width:70px;
       height:120px;
     }
+
+/* vendor prefixes removed for clarity */
+.ribbon {
+    width: 650px;
+    margin: 10px auto;
+    padding: 0 10px 0;
+    position: relative;
+    color: #444;
+    background: #E7D551;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    -webkit-text-fill-color: #000; 
+}
+.ribbon h3 {
+    display: block;
+    height: 30px;
+    line-height: 1.3;
+    width: 680px;
+    margin: 0;
+    padding: 5px 10px;
+    position: relative;
+    left: -26px;
+    top: 8px;
+    color: #fff;
+    text-shadow: 0 1px 1px #111;
+    border-top: 1px solid #363636;
+    border-bottom: 1px solid #202020;
+    background: #333;
+    background-color: #000;
+    background: linear-gradient(top, #383838 0%, #262626 100%);
+    border-radius: 2px 2px 0 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+.ribbon h3::before,
+.ribbon h3::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -11px;
+    z-index: -1;
+    border: 5px solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: -5px -10px -5 -10;
+    
+}
+
+.ribbon h3::before {left: 5;}
+.ribbon h3::after {right: 5;}
+
   </style>
 <center>
 <img src="welcome_header.jpg" alt="memphis" height="500">
@@ -425,14 +478,14 @@ body {
   </div>
 </div>
 <div class="container" style="background: white;">
-    <div class="bump"></div>
+  <br>
 <center><h2>The Badrians' Official Visitor's Guide To Memphis, TN!</h2></center> 
 <center><blockquote width="600">Check out the interactive map below for our top 3 places to eat and things to do while you're in town. Then make sure to scroll below and check out all of our other siggestions for places to go!</blockquote></center>
-    <div class="onecol"><div class="rule">&nbsp;</div></div>
+    <div class="onecol"></div>
 <div style="margin-left: 80px;">
 <ul id="map">
   <li><a class="gus" href="#"><span><b>Gus' Fried Chicken</b><br>
-    They are world famous for a reason. Gus's focuses on one thing and hits out of the park… chicken! Get yourself some amazing hot and spicy fried chicken with a side of baked beans, slaw, macaroni and cheese… whatever floats your boat!</span></a></li>
+    They are world famous for a reason. Gus's focuses on one thing and hits out of the park&hellip; chicken! Get yourself some amazing hot and spicy fried chicken with a side of baked beans, slaw, macaroni and cheese&hellip; whatever floats your boat!</span></a></li>
 
   <li><a class="rendezvous" href="#"><span><b>Rendezvous</b><br>
     The Rendezvous has been a Memphis BBQ tradition since 1948. Marc's recommendation would be the ribs, wet or dry. Michelle's pick would be the pork shoulder plate. Don't forget the traditional cheese and sausage plate to start off with!</span></a></li>
@@ -452,70 +505,124 @@ body {
     </span></a></li>
 </ul>
     <div class="bump"></div>
-<div>
-<p>
-OUR FAVORITE THINGS TO DO
-<br>
-Downtown
-<br>
-Main Street – Whether it's day or night, taking a stroll down Main Street is a beautiful sight to see. There's a bunch of restaurants, bars, and cool Memphis murals. Some of our favorite places to try are Aldo's Pizza Pies, Bardog Tavern, The Majestic Grille, and Blind Bear.
-<br>
-Bass Pro Shops At The Pyramid – It's more than just a Bass Pro. This shop is inside the massive iconic Pyramid in Memphis that once served as an event space. Not only will your jaw drop when you see it from the inside, but you can ride the elevator all the way to the top and get an amazing view of the city!
-<br>
-National Civil Rights Museum – Revisit the American Civil Rights Movement! You can also see where civil rights leader Dr. Martin Luther King Jr. was assassinated right outside of the museum in front of the Lorraine Motel. It's very powerful and doesn't cost anything!
-<br>
-Sun Studio – A must for our music lovers. Sun Studio is well known in the music industry as "The Birthplace of Rock 'N Roll" and the most famous recording studio in the world. Superstars like Elvis Presley, Jerry Lee Lewis, B.B. King and Johnny Cash all started their recording careers here. Take a tour! They even do a free shuttle to and from Graceland!
-<br>
-Mud Island – A small peninsula surrounded by the Mississippi River, Mud Island has it's own park, museum and cute local stores to check out.
-<br>
-Midtown
-<br>
-The Memphis Zoo – Always ranked as one of the top 5 zoos in the country, the Memphis Zoo is a pretty cool and fun place to visit! They just added a Zambezi River Hippo Camp Exhibit, where the stars are the hippos and Nile crocodiles.
-<br>
-Overton Square – Overton Square has a bit of everything from locally owned shopping to dining, bars, and entertainment. It makes for a great night out! We love Babalu Tacos & Tapas, Sweet Noshings and Molly's La Casita. You can "Ride the Roo" between Overton Square and Cooper Young too!
-<br>
-Cooper-Young – We love Cooper-Young for it's boutique shopping, nice restaurants and happy hour hangouts. You'll love it too! We suggest Alchemy for an awesome grilled cheese and drinks, Young Avenue Deli and Celtic Crossing for a fun bar atmosphere, and The House of Mews is a MUST for our cat lovers!
-<br>
-East Memphis
-<br>
-Shelby Farms Park Conservancy – Shelby Farms Park is a 4,500-acre park that's full of walking and running trails, horseback riding, zip lining, canoeing, kayaking, paddle boarding, cool playgrounds and even fishing. They just built a brand new visitor center and restaurant. If you enjoy the outdoors, you will love Shelby Farms!
-<br>
-Memphis Botanic Garden – A 96-acre botanical garden that's perfect to take a stroll through. There's a children's garden too called My Big Backyard, and we love it just as much as the kids do! We also enjoy feeding the big Koi fish in the Japanese Garden.
-<br>
-The Dixon Gallery and Gardens – An art museum within 17 acres of gardens. 
-<br>
-South Memphis
-<br>
-Elvis Presley's Graceland – ELVIS, ELVIS, ELVIS! What more can we say? If you're an Elvis Presley fan, or simply love music, you MUST go take a tour of Graceland. See how "The King" lived and pay your respects at the end of the tour. It's Memphis' most popular attraction and everyone should do it once.
-<br>
-The Stax Museum of American Soul Music – Located at the original site of Stax Records, it's the world's only authentic soul music museum! There's state-of-the art interactive exhibits, music videos, instruments, items of stage clothing, records and more. It's another place that music lovers are guaranteed to enjoy. Michelle loves that you can see an Academy Award up close and personal!
-<br>
-OUR FAVORITE PLACES TO EAT
-<br>
-Downtown
-<br>
-Central BBQ – An award-winning BBQ joint that's been featured on the Food Network and is one of Marc's favorite places. He says get the BBQ Nachos… and you're welcome!
-Earnestine & Hazel's – A really cool dive bar that has been deemed one of the most haunted places in America. Seriously, walk in and talk to the employees. They all have stories. Then walk around and enjoy the atmosphere. Earnestine & Hazel's is also nationally recognized for their Soul Burger, which you must try!
-South Of Beale – Memphis' first gastropub! We go here just for their sweet and spicy popcorn alone, which has been featured on the Food Network's "Diners, Drive-ins, and Dives" along with their amazing duck fried rice. This is our favorite place to eat downtown!
-Cheesecake Corner – a locally owned bakery that features classic and unique cheesecake flavors. Marc swears by this place!
-Blue Plate Café – A good place to go if you want a simple but hearty Southern breakfast for cheap!
-The Arcade Restaurant – Memphis' oldest restaurant, the nostalgic 1950's style diner serves up breakfast and lunch daily. Elvis Presley was a regular and you can try to get a seat at the "Elvis Booth," his favorite place to sit in the restaurant.
-Loflin Yard – A cool beer garden that just recently opened.
-<br>
-Midtown
-<br>
-Brother Juniper's – Hands down our favorite place in Memphis to get breakfast. For our out of town guests, it's worth the drive/Uber and the wait! They freshly bake their bread, biscuits and pastries that you can pair with their house-made jams. We recommend any of their open face omelets.
-Café Eclectic - a local coffee shop and café that serves up great coffee and good food.
-Fino's From The Hill – An authentic, New York Style Italian Deli. For Michelle, this is the closest she can get to a taste of home here in Memphis and she loves it!
-<br>
-East Memphis
-<br>
-Gibson's Donuts – Another Memphis staple, Memphians will argue that Gibson's Donuts makes the best donuts in America. We have three words for you: maple bacon donut.
-Muddys Bakeshop – In our opinion, the best local bakery in Memphis! They serve cakes, cupcakes, cookies, pies, brownies, all of it. Trust us… go with the Prozac Cupcake!
-The Germantown Commissary – Michelle's pick when it comes to the best BBQ is town. You can't go wrong with whatever you order, but the 2 meat combo rocks! Michelle loves the pulled pork and ribs with their awesome homemade rub on top while Marc loves the smoked sausage links and the homemade banana pudding!
-Corky's Ribs and BBQ – A Memphis BBQ favorite. We think they have the best sausage and cheese plate and love their honey and apple BBQ sauce.
-Bryant's Breakfast – one of Marc's favorite breakfast places and it's also one of the first places he took Michelle to. You order at the counter and then they bring your order to you. They have everything from homemade biscuits and country ham to omelets, gravy and grits.
-The Pancake Shop – You can get more than all the pancakes you can eat here. Besides every pancake in every flavor, you can also get your standard breakfast with whatever sides you'd like, all for very cheap! It's awesome, and the best part is that they're open 24 hours!
-</p> 
+  </div>
+  <br>
 </div>
-          </div></div>
+<div class="ribbon">
+    <center><h3 style="-webkit-text-fill-color: #fff;">OUR FAVORITE THINGS TO DO</h3></center>
+    <br>
+    <center><h2>Downtown</h2></center>
+<p>
+<strong>Main Street</strong> &mdash; Whether it's day or night, taking a stroll down Main Street is a beautiful sight to see. There's a bunch of restaurants, bars, and cool Memphis murals. Some of our favorite places to try are Aldo's Pizza Pies, Bardog Tavern, The Majestic Grille, and Blind Bear.
+<br>
+<br>
+<strong>Bass Pro Shops At The Pyramid</strong> &mdash; It's more than just a Bass Pro. This shop is inside the massive iconic Pyramid in Memphis that once served as an event space. Not only will your jaw drop when you see it from the inside, but you can ride the elevator all the way to the top and get an amazing view of the city!
+<br>
+<br>
+<strong>National Civil Rights Museum</strong> &mdash; Revisit the American Civil Rights Movement! You can also see where civil rights leader Dr. Martin Luther King Jr. was assassinated right outside of the museum in front of the Lorraine Motel. It's very powerful and doesn't cost anything!
+<br>
+<br>
+<strong>Sun Studio</strong> &mdash; A must for our music lovers. Sun Studio is well known in the music industry as "The Birthplace of Rock 'N Roll" and the most famous recording studio in the world. Superstars like Elvis Presley, Jerry Lee Lewis, B.B. King and Johnny Cash all started their recording careers here. Take a tour! They even do a free shuttle to and from Graceland!
+<br>
+<br>
+<strong>Mud Island</strong> &mdash; A small peninsula surrounded by the Mississippi River, Mud Island has it's own park, museum and cute local stores to check out.
+<br>
+<br>
+    <center><h2>Midtown</h2></center>
+<br>
+<p>
+<strong>The Memphis Zoo</strong> &mdash; Always ranked as one of the top 5 zoos in the country, the Memphis Zoo is a pretty cool and fun place to visit! They just added a Zambezi River Hippo Camp Exhibit, where the stars are the hippos and Nile crocodiles.
+<br>
+<br>
+<strong>Overton Square</strong> &mdash; Overton Square has a bit of everything from locally owned shopping to dining, bars, and entertainment. It makes for a great night out! We love Babalu Tacos &amp; Tapas, Sweet Noshings and Molly's La Casita. You can "Ride the Roo" between Overton Square and Cooper Young too!
+<br>
+<br>
+<strong>Cooper-Young</strong> &mdash; We love Cooper-Young for it's boutique shopping, nice restaurants and happy hour hangouts. You'll love it too! We suggest Alchemy for an awesome grilled cheese and drinks, Young Avenue Deli and Celtic Crossing for a fun bar atmosphere, and The House of Mews is a MUST for our cat lovers!
+<br>
+<br>
+    <center><h2>East Memphis</h2></center>
+<br>
+<p>
+<strong>Shelby Farms Park Conservancy</strong> &mdash; Shelby Farms Park is a 4,500-acre park that's full of walking and running trails, horseback riding, zip lining, canoeing, kayaking, paddle boarding, cool playgrounds and even fishing. They just built a brand new visitor center and restaurant. If you enjoy the outdoors, you will love Shelby Farms!
+<br>
+<br>
+<strong>Memphis Botanic Garden</strong> &mdash; A 96-acre botanical garden that's perfect to take a stroll through. There's a children's garden too called My Big Backyard, and we love it just as much as the kids do! We also enjoy feeding the big Koi fish in the Japanese Garden.
+<br>
+<br>
+<strong>The Dixon Gallery and Gardens</strong> &mdash; An art museum within 17 acres of gardens. 
+<br>
+<br>
+    <center><h2>South Memphis</h2></center>
+<br>
+<p>
+<strong>Elvis Presley's Graceland</strong> &mdash; ELVIS, ELVIS, ELVIS! What more can we say? If you're an Elvis Presley fan, or simply love music, you MUST go take a tour of Graceland. See how "The King" lived and pay your respects at the end of the tour. It's Memphis' most popular attraction and everyone should do it once.
+<br>
+<br>
+<strong>The Stax Museum of American Soul Music</strong> &mdash; Located at the original site of Stax Records, it's the world's only authentic soul music museum! There's state-of-the art interactive exhibits, music videos, instruments, items of stage clothing, records and more. It's another place that music lovers are guaranteed to enjoy. Michelle loves that you can see an Academy Award up close and personal!
+<br>
+<br>
+</div>
+<br>
+<div class="ribbon">
+    <center><h3 style="-webkit-text-fill-color: #fff;">OUR FAVORITE THINGS TO EAT</h3></center>
+    <br>
+<br>
+    <center><h2>Downtown</h2></center>
+<p>
+<strong>Central BBQ</strong> &mdash; An award-winning BBQ joint that's been featured on the Food Network and is one of Marc's favorite places. He says get the BBQ Nachos&hellip; and you're welcome!
+<br>
+<br>
+<strong>Earnestine &amp; Hazel's</strong> &mdash; A really cool dive bar that has been deemed one of the most haunted places in America. Seriously, walk in and talk to the employees. They all have stories. Then walk around and enjoy the atmosphere. Earnestine &amp; Hazel's is also nationally recognized for their Soul Burger, which you must try!
+<br>
+<br>
+<strong>South Of Beale</strong> &mdash; Memphis' first gastropub! We go here just for their sweet and spicy popcorn alone, which has been featured on the Food Network's "Diners, Drive-ins, and Dives" along with their amazing duck fried rice. This is our favorite place to eat downtown!
+<br>
+<br>
+<strong>Cheesecake Corner</strong> &mdash; a locally owned bakery that features classic and unique cheesecake flavors. Marc swears by this place!
+<br>
+<br>
+<strong>Blue Plate Cafe</strong> &mdash; A good place to go if you want a simple but hearty Southern breakfast for cheap!
+<br>
+<br>
+<strong>The Arcade Restaurant</strong> &mdash; Memphis' oldest restaurant, the nostalgic 1950's style diner serves up breakfast and lunch daily. Elvis Presley was a regular and you can try to get a seat at the "Elvis Booth," his favorite place to sit in the restaurant.
+<br>
+<br>
+<strong>Loflin Yard</strong> &mdash; A cool beer garden that just recently opened.
+<br>
+<br>
+    <center><h2>Midtown</h2></center>
+<br>
+<p>
+<strong>Brother Juniper's</strong> &mdash; Hands down our favorite place in Memphis to get breakfast. For our out of town guests, it's worth the drive/Uber and the wait! They freshly bake their bread, biscuits and pastries that you can pair with their house-made jams. We recommend any of their open face omelets.
+<br>
+<br>
+<strong>Cafe Eclectic</strong> - a local coffee shop and cafe that serves up great coffee and good food.
+<br>
+<br>
+<strong>Fino's From The Hill</strong> &mdash; An authentic, New York Style Italian Deli. For Michelle, this is the closest she can get to a taste of home here in Memphis and she loves it!
+<br>
+<br>
+    <center><h2>East Memphis</h2></center>
+<br>
+<p>
+<strong>Gibson's Donuts</strong> &mdash; Another Memphis staple, Memphians will argue that Gibson's Donuts makes the best donuts in America. We have three words for you: maple bacon donut.
+<br>
+<br>
+<strong>Muddy's Bakeshop</strong> &mdash; In our opinion, the best local bakery in Memphis! They serve cakes, cupcakes, cookies, pies, brownies, all of it. Trust us&hellip; go with the Prozac Cupcake!
+<br>
+<br>
+<strong>The Germantown Commissary</strong> &mdash; Michelle's pick when it comes to the best BBQ is town. You can't go wrong with whatever you order, but the 2 meat combo rocks! Michelle loves the pulled pork and ribs with their awesome homemade rub on top while Marc loves the smoked sausage links and the homemade banana pudding!
+<br>
+<br>
+<strong>Corky's Ribs</strong> &amp; BBQ &mdash; A Memphis BBQ favorite. We think they have the best sausage and cheese plate and love their honey and apple BBQ sauce.
+<br>
+<br>
+<strong>Bryant's Breakfast</strong> &mdash; one of Marc's favorite breakfast places and it's also one of the first places he took Michelle to. You order at the counter and then they bring your order to you. They have everything from homemade biscuits and country ham to omelets, gravy and grits.
+<br>
+<br>
+<strong>The Pancake Shop</strong> &mdash; You can get more than all the pancakes you can eat here. Besides every pancake in every flavor, you can also get your standard breakfast with whatever sides you'd like, all for very cheap! It's awesome, and the best part is that they're open 24 hours!
+</p> 
+<br>
+</div>
+<br>
+  </div>
