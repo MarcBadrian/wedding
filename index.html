@@ -1,4 +1,5 @@
 <script src="/bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 @import url(http://fonts.googleapis.com/css?family=Raleway);
@@ -40,7 +41,6 @@
     margin-left: auto;    
     width: 100%;    
     max-width: 100%;    
-    min-width: 1000px; 
 }
 #cssmenu > ul {
   background: #000000;
@@ -75,6 +75,7 @@
   text-transform: uppercase;
   text-decoration: none;
   background: #000000;
+  display: inline-block;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
@@ -137,7 +138,7 @@
 #cssmenu.small-screen > ul > li,
 #cssmenu.small-screen.align-center {
   float: none;
-  display: block;
+  display: inline-block;
   border-top: 1px solid rgba(100, 100, 100, 0.1);
 }
 #cssmenu.small-screen > ul > li:hover > a,
@@ -337,7 +338,7 @@ body {
 .container {
     width:1000px;
     height:auto;
-    margin:0px auto;
+    margin:40px auto;
     padding:0px;
     clear:both;
 }
