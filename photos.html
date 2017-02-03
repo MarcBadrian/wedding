@@ -118,7 +118,6 @@ p {
   padding: 0;
   border: 0;
   list-style: none;
-  text-indent: 12px;
   text-align: center;
   line-height: 1;
   display: block;
@@ -140,13 +139,16 @@ p {
   display: none;
 }
 #cssmenu {
-  width: auto;
+  width: 90%;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   line-height: 1;
+  min-width: 1200px;
+  text-align: center;
 }
 #cssmenu > ul {
   background: #000000;
+  text-align: center;
 }
 #cssmenu > ul > li {
   float: left;
@@ -294,6 +296,13 @@ p {
   background: #A9A9A9;
 }
 
+div#centerDiv {
+        width: 100%;
+        text-align: center;
+        background: #000;
+        padding-left: 75px;
+    }
+
 /* columns */
 
 .onecol,
@@ -410,7 +419,10 @@ a:active  { color: #d4af37 }  /* active links    */
 <img src="photos_header.jpg" alt="mm" height="500" style="display: block;">
 </div>
 </center>
-<div id="cssmenu" class="dropdown" style="font-family: Raleway, sans-serif;">
+
+<center>
+<div id="centerDiv">
+<div id="cssmenu" style="font-family: Raleway, sans-serif;">
   <div id="menu-button">Menu</div>
   <ul>
     <li>
@@ -437,6 +449,9 @@ a:active  { color: #d4af37 }  /* active links    */
   </ul>
   </div>
 </div>
+</div>
+</center>
+
 <div class="page_container">
     <div style="clear:both;">&nbsp;</div>
 <div style="clear:both;">&nbsp;</div>

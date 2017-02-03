@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  text-indent: 12px;
   text-align: center;
   list-style: none;
   line-height: 1;
@@ -35,6 +34,7 @@
   font-family: Raleway, sans-serif;
   font-weight: bold;
   line-height: 1;
+  min-width: 1200px;
 }
 #cssmenu > ul {
   background: #000000;
@@ -185,6 +185,11 @@
   background: #A9A9A9;
 }
 
+div#centerDiv {
+        width: auto;
+        text-align: center;
+        border: 1px solid red;
+    }
 
 /* columns */
 
@@ -342,6 +347,9 @@ a:active  { color: #d4af37 }  /* active links    */
 <center>
 <img src="registry_header.jpg" alt="giftbox"  height="500">
 </center>
+
+<div id="centerDiv" style="width: 100%;">
+
 <div id="cssmenu" class="dropdown" style="width: 110%;">
   <div id="menu-button">Menu</div>
   <ul>
@@ -369,6 +377,8 @@ a:active  { color: #d4af37 }  /* active links    */
   </ul>
   </div>
 </div>
+</div>
+
 <div class="container">
     <div class="bump"></div>
 <div>

@@ -34,20 +34,15 @@
   display: none;
 }
 #cssmenu {
+  width: 100%;
+  position: absolute;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   line-height: 1;
-  margin-right: auto;    
-    margin-left: auto;    
-    width: 100%;    
-    max-width: 100%;    
+  min-width: 1200px;
 }
 #cssmenu > ul {
   background: #000000;
-  margin-right: auto;    
-    margin-left: auto;    
-    max-width: 100%;    
-    min-width: 1000px; 
 }
 #cssmenu > ul > li {
   float: left;
@@ -75,7 +70,6 @@
   text-transform: uppercase;
   text-decoration: none;
   background: #000000;
-  display: inline-block;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
@@ -138,7 +132,7 @@
 #cssmenu.small-screen > ul > li,
 #cssmenu.small-screen.align-center {
   float: none;
-  display: inline-block;
+  display: block;
   border-top: 1px solid rgba(100, 100, 100, 0.1);
 }
 #cssmenu.small-screen > ul > li:hover > a,
@@ -450,6 +444,7 @@ a:active  { color: #d4af37 }  /* active links    */
 <center>
 <img src="index_header.jpg" alt="memphis" height="500">
 </center>
+<center><div style="background: #000;">
 <div id="cssmenu" class="dropdown">
   <div id="menu-button">Menu</div>
   <ul>
@@ -475,7 +470,7 @@ a:active  { color: #d4af37 }  /* active links    */
       <a href="photos.html" data-title="Photos">Photos</a>
     </li>
   </ul>
-  </div>
+  </div></center>
 </div>
 <div class="container" style="background: white;">
     <div class="bump"></div>
