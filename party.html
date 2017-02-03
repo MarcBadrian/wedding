@@ -2841,7 +2841,7 @@ html[xmlns] .slides {display: block;}
   padding: 0;
   border: 0;
   list-style: none;
-  text-align: center;  
+  text-align: center;
   line-height: 1;
   display: block;
   position: relative;
@@ -2862,17 +2862,26 @@ html[xmlns] .slides {display: block;}
   display: none;
 }
 #cssmenu {
-  width: auto;
+  width: 100%;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   line-height: 1;
   min-width: 1200px;
+  text-align: center;
 }
 #cssmenu > ul {
   background: #000000;
+  text-align: center;
 }
 #cssmenu > ul > li {
   float: left;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+
+#cssmenu > ul > li.last {
+  float: none;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
@@ -2894,10 +2903,31 @@ html[xmlns] .slides {display: block;}
   font-weight: bold;
   color: #ffffff;
   letter-spacing: 1px;
-  text-indent: 12px;
   text-transform: uppercase;
   text-decoration: none;
   background: #000000;
+  text-indent: 20px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#cssmenu > ul > li.last > a {
+  padding: 16px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #000000;
+  text-indent: 20px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
@@ -2910,6 +2940,7 @@ html[xmlns] .slides {display: block;}
   transform-style: preserve-3d;
 }
 #cssmenu > ul > li.active > a {
+  float: none;
   color: #d4af37;
 }
 #cssmenu > ul > li:hover > a,
@@ -2920,6 +2951,41 @@ html[xmlns] .slides {display: block;}
   transform: rotateX(90deg) translateY(-23px);
   -ms-transform: none;
 }
+#cssmenu > ul > li.last:hover > a,
+#cssmenu > ul > li.last > a:hover {
+  color: #A9A9A9;
+  -webkit-transform: rotateX(90deg) translateY(-23px);
+  -moz-transform: rotateX(90deg) translateY(-23px);
+  transform: rotateX(90deg) translateY(-23px);
+  -ms-transform: none;
+}
+
+#cssmenu > ul > li.last > a::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 16px 18px;
+  color: #d4af37;
+  background: #696969;
+  content: attr(data-title);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -ms-transform: translateY(- -18px);
+}
+
 #cssmenu > ul > li > a::before {
   position: absolute;
   top: 100%;
@@ -2945,8 +3011,22 @@ html[xmlns] .slides {display: block;}
   transform-origin: 50% 0;
   -ms-transform: translateY(- -18px);
 }
+
+#cssmenu > ul > li.last {
+  float: none;
+  overflow: hidden;
+  color: #d4af37;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+
 #cssmenu > ul > li:hover > a::before,
 #cssmenu > ul > li > a:hover::before {
+  background: #000000;
+}
+#cssmenu > ul > li.last:hover > a::before,
+#cssmenu > ul > li.last > a:hover::before {
   background: #000000;
 }
 #cssmenu.small-screen {
@@ -3017,6 +3097,12 @@ html[xmlns] .slides {display: block;}
 #cssmenu.small-screen #menu-button.menu-opened:before {
   background: #A9A9A9;
 }
+
+div#centerDiv {
+        width: 100%;
+        text-align: center;
+        background: #000;
+    }
 
 
 /* columns */
@@ -3195,7 +3281,7 @@ a:active  { color: #d4af37 }  /* active links    */
     <li>
       <a href="registry.html" data-title="Registry">Registry</a>
     </li>
-    <li>
+    <li class="last">
       <a href="photos.html" data-title="Photos">Photos</a>
     </li>
   </ul>

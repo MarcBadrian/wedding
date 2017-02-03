@@ -8,8 +8,8 @@
   margin: 0;
   padding: 0;
   border: 0;
-  text-align: center;
   list-style: none;
+  text-align: center;
   line-height: 1;
   display: block;
   position: relative;
@@ -30,17 +30,26 @@
   display: none;
 }
 #cssmenu {
-  width: auto;
+  width: 100%;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   line-height: 1;
   min-width: 1200px;
+  text-align: center;
 }
 #cssmenu > ul {
   background: #000000;
+  text-align: center;
 }
 #cssmenu > ul > li {
   float: left;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+
+#cssmenu > ul > li.last {
+  float: none;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
@@ -65,6 +74,28 @@
   text-transform: uppercase;
   text-decoration: none;
   background: #000000;
+  text-indent: 20px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#cssmenu > ul > li.last > a {
+  padding: 16px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #000000;
+  text-indent: 20px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
@@ -77,6 +108,7 @@
   transform-style: preserve-3d;
 }
 #cssmenu > ul > li.active > a {
+  float: none;
   color: #d4af37;
 }
 #cssmenu > ul > li:hover > a,
@@ -87,6 +119,41 @@
   transform: rotateX(90deg) translateY(-23px);
   -ms-transform: none;
 }
+#cssmenu > ul > li.last:hover > a,
+#cssmenu > ul > li.last > a:hover {
+  color: #A9A9A9;
+  -webkit-transform: rotateX(90deg) translateY(-23px);
+  -moz-transform: rotateX(90deg) translateY(-23px);
+  transform: rotateX(90deg) translateY(-23px);
+  -ms-transform: none;
+}
+
+#cssmenu > ul > li.last > a::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 16px 18px;
+  color: #d4af37;
+  background: #696969;
+  content: attr(data-title);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -ms-transform: translateY(- -18px);
+}
+
 #cssmenu > ul > li > a::before {
   position: absolute;
   top: 100%;
@@ -112,8 +179,22 @@
   transform-origin: 50% 0;
   -ms-transform: translateY(- -18px);
 }
+
+#cssmenu > ul > li.last {
+  float: none;
+  overflow: hidden;
+  color: #d4af37;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+
 #cssmenu > ul > li:hover > a::before,
 #cssmenu > ul > li > a:hover::before {
+  background: #000000;
+}
+#cssmenu > ul > li.last:hover > a::before,
+#cssmenu > ul > li.last > a:hover::before {
   background: #000000;
 }
 #cssmenu.small-screen {
@@ -186,9 +267,9 @@
 }
 
 div#centerDiv {
-        width: auto;
+        width: 100%;
         text-align: center;
-        border: 1px solid red;
+        background: #000;
     }
 
 /* columns */
@@ -350,7 +431,7 @@ a:active  { color: #d4af37 }  /* active links    */
 
 <div id="centerDiv" style="width: 100%;">
 
-<div id="cssmenu" class="dropdown" style="width: 110%;">
+<div id="cssmenu" class="dropdown">
   <div id="menu-button">Menu</div>
   <ul>
     <li>
@@ -371,7 +452,7 @@ a:active  { color: #d4af37 }  /* active links    */
     <li class="active">
       <a href="#" data-title="Registry">Registry</a>
     </li>
-    <li>
+    <li class="last">
       <a href="photos.html" data-title="Photos">Photos</a>
     </li>
   </ul>
