@@ -130,6 +130,7 @@ p {
 #cssmenu > ul:after {
   content: ".";
   display: block;
+  text-align: left;
   clear: both;
   visibility: hidden;
   line-height: 0;
@@ -196,7 +197,7 @@ p {
   transform-style: preserve-3d;
 }
 #cssmenu > ul > li.last > a {
-  padding: 16px 18px 0px 0px;
+  padding: 16px 18px;
   font-size: 14px;
   font-weight: bold;
   color: #d4af37;
@@ -302,10 +303,12 @@ p {
 #cssmenu > ul > li:hover > a::before,
 #cssmenu > ul > li > a:hover::before {
   background: #000000;
+  text-align: left;
 }
 #cssmenu > ul > li.last:hover > a::before,
 #cssmenu > ul > li.last > a:hover::before {
   background: #000000;
+  text-align: left;
 }
 #cssmenu.small-screen {
   width: 100%;
