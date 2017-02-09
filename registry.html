@@ -23,6 +23,7 @@
   display: block;
   clear: both;
   visibility: hidden;
+  text-align: left;
   line-height: 0;
   height: 0;
 }
@@ -43,16 +44,16 @@
 }
 #cssmenu > ul > li {
   float: left;
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  perspective: 1000px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  perspective: 1200px;
 }
 
 #cssmenu > ul > li.last {
   float: none;
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  perspective: 1000px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  perspective: 1200px;
 }
 #cssmenu.align-center > ul {
   font-size: 0;
@@ -87,7 +88,8 @@
   transform-style: preserve-3d;
 }
 #cssmenu > ul > li.last > a {
-  padding: 16px 18px 0px 0px;
+  padding: 16px 25px;
+  padding-left: 20px;
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
@@ -426,13 +428,14 @@ a:hover   { color: #d4af37 }  /* user hovers     */
 a:active  { color: #d4af37 }  /* active links    */
 
 </style>
+<title>Registry</title>
 <center>
 <img src="registry_header.jpg" alt="giftbox"  height="500">
 </center>
 
 <div id="centerDiv" style="width: 100%;">
 
-<div id="cssmenu" class="dropdown">
+<div id="cssmenu" style="font-family: Raleway, sans-serif;">
   <div id="menu-button">Menu</div>
   <ul>
     <li>
